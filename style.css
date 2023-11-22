@@ -1,0 +1,246 @@
+/*VARIABLES*/
+.main {
+    display: flex;
+}
+
+:root {
+    --redvelvet: #CB0D1F;
+    --darkgray: #ACACAC;
+    --light-gray: #E2DEDC;
+}
+
+/*HEADER*/
+
+.header-1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+    text-align: right;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+#acesso,
+#cadastro {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header-2 {
+    flex-direction: row;
+    display: flex;
+}
+
+#logo {
+    width: 350px;
+    padding: 40px;
+    padding-left: 85px;
+}
+
+.input-group {
+    padding-top: 50px;
+    text-align: right;
+    width: 100%;
+    padding-right: 100px;
+}
+
+#txtBusca {
+    height: 44px;
+    width: 40%;
+    border: 1px solid #959595;
+    opacity: 1;
+}
+
+.btnBusca {
+    width: 110px;
+    height: 44px;
+    border: 0;
+    background: var(--redvelvet);
+    opacity: 1;
+    font-weight: 800;
+    color: white;
+}
+
+/*MENU*/
+
+#menu {
+    background-color: var(--redvelvet);
+    list-style: none;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    padding-left: 90px;
+}
+
+.itens {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding-left: 45px;
+}
+
+.itemClicado {
+    padding-left: 45px;
+}
+
+
+
+/*ASIDE*/
+
+#asideMenu {
+    margin-top: 80px;
+    margin-left: 0;
+    background-color: var(--light-gray);
+    width: 200px;
+    height: 507px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.itens2 {
+    padding-bottom: 10px;
+}
+
+/*SECTION_1*/
+
+#vazioSection1 {
+    background-color: var(--darkgray);
+    width: 98%;
+    height: 281px;
+    margin-top: 80px;
+    margin-left: 25px;
+}
+
+.container {
+    flex-direction: row;
+    display: flex;
+    max-width: 200px;
+    margin: 0;
+    margin-left: 70px;
+}
+
+
+/*SECTION_2*/
+
+#bemVindo {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#bemVindoTitulo {
+    font-size: 30px;
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: var(--redvelvet);
+    width: 100%;
+    height: 176px;
+    margin-top: 20px;
+}
+
+/*CALÇADOS CATALOGO*/
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    padding: 15px;
+}
+
+/* QUERIES */
+@media only screen and (min-width: 320px) and (max-width: 481px) {
+
+    .input-group {
+        display: none;
+    }
+
+    #menu {
+        padding-left: 50px;
+    }
+
+    #asideMenu {
+        display: none;
+    }
+
+    #vazioSection1 {
+        width: 0;
+        height: 0;
+    }
+
+    #bemVindo {
+        width: 85%;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #asideMenu {
+        display: none;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+        width: 0;
+    }
+
+    #vazioSection1 {
+        width: 0;
+        height: 0;
+    }
+
+    #bemVindo {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #asideMenu {
+        display: none;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+        width: 0;
+    }
+
+    #vazioSection1 {
+        width: 0;
+        height: 0;
+    }
+
+    #bemVindo {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 482px) and (max-width: 653px) {
+
+    .input-group {
+        display: none;
+    }
+}
